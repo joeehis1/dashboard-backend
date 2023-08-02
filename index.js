@@ -9,7 +9,10 @@ dotenv.config({ path: "./vars/.env" });
 const cache = {};
 const cacheExp = 60 * 60 * 1000;
 
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = [
+    "http://localhost:5173",
+    "https://spectacular-froyo-fdbba9.netlify.app",
+];
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
