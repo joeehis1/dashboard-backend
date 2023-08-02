@@ -4,7 +4,7 @@ const app = express();
 const cors = require("cors");
 const { fetchFromExchange, dataFetch } = require("./utils");
 const port = process.env.PORT || 3000;
-dotenv.config();
+dotenv.config({ path: "./vars/.env" });
 
 const cache = {};
 const cacheExp = 60 * 60 * 1000;
